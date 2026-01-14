@@ -1,0 +1,145 @@
+// ============================================
+// CATEGORY 1: Super Simple (No Auth Required)
+// ============================================
+
+
+  
+  // 1️⃣ JSONPlaceholder - Fake REST API for testing
+  
+    url: 'https://jsonplaceholder.typicode.com',
+    description: 'Perfect for learning! Fake blog data',
+    features: ['Posts', 'Comments', 'Users', 'Photos', 'Albums'],
+    auth: 'None required',
+    endpoints: {
+      posts: 'https://jsonplaceholder.typicode.com/posts',
+      users: 'https://jsonplaceholder.typicode.com/users',
+      comments: 'https://jsonplaceholder.typicode.com/comments'
+    }
+
+
+
+  // 2️⃣ REST Countries - Country data
+
+    url: 'https://restcountries.com/v3.1',
+    description: 'Country information',
+    features: ['Country details', 'Flags', 'Languages', 'Currencies'],
+    auth: 'None required',
+    endpoints: {
+      all: 'https://restcountries.com/v3.1/all',
+      byName: 'https://restcountries.com/v3.1/name/india',
+      byCode: 'https://restcountries.com/v3.1/alpha/ind'
+    }
+
+   
+  
+  // 3️⃣ Dog CEO - Random dog pictures
+
+    url: 'https://dog.ceo/api',
+    description: 'Random dog images',
+    features: ['Random images', 'By breed', 'Multiple images'],
+    auth: 'None required',
+    endpoints: {
+      random: 'https://dog.ceo/api/breeds/image/random',
+      byBreed: 'https://dog.ceo/api/breed/husky/images/random',
+      allBreeds: 'https://dog.ceo/api/breeds/list/all'
+    }
+
+
+  
+  // 4️⃣ Advice Slip - Random advice
+ 
+    url: 'https://api.adviceslip.com',
+    description: 'Random advice',
+    features: ['Random advice', 'Search advice'],
+    auth: 'None required',
+    endpoints: {
+      random: 'https://api.adviceslip.com/advice',
+      search: 'https://api.adviceslip.com/advice/search/love'
+    }
+
+
+  
+  // 5️⃣ Bored API - Activity suggestions
+  
+    url: 'https://www.boredapi.com/api',
+    description: 'Random activity ideas',
+    features: ['Random activities', 'Filter by type', 'Filter by participants'],
+    auth: 'None required',
+    endpoints: {
+      random: 'https://www.boredapi.com/api/activity',
+      byType: 'https://www.boredapi.com/api/activity?type=education'
+    },
+    bestFor: 'Simple JSON parsing'
+  }
+};
+
+
+
+
+// ============================================
+// CATEGORY 2: With Free API Key (More Features)
+// ============================================
+
+
+  // 1️⃣ OpenWeather - Weather data
+
+    url: 'https://openweathermap.org/api',
+    description: 'Current weather & forecasts',
+    signUp: 'https://openweathermap.org/appid',
+    freeTier: '1000 calls/day',
+    endpoints: {
+      current: 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_KEY',
+      forecast: 'https://api.openweathermap.org/data/2.5/forecast?q=London&appid=YOUR_KEY'
+    }
+
+
+
+  
+  // 2️⃣ News API - News articles
+  
+    url: 'https://newsapi.org',
+    description: 'News from around the world',
+    signUp: 'https://newsapi.org/register',
+    freeTier: '100 requests/day',
+    endpoints: {
+      topHeadlines: 'https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_KEY',
+      everything: 'https://newsapi.org/v2/everything?q=bitcoin&apiKey=YOUR_KEY'
+    }
+
+
+  
+  // 3️⃣ The Movie Database (TMDB) - Movie data
+  
+    url: 'https://www.themoviedb.org/documentation/api',
+    description: 'Movie & TV show information',
+    signUp: 'https://www.themoviedb.org/signup',
+    freeTier: 'Unlimited (fair use)',
+    endpoints: {
+      popular: 'https://api.themoviedb.org/3/movie/popular?api_key=YOUR_KEY',
+      search: 'https://api.themoviedb.org/3/search/movie?query=Inception&api_key=YOUR_KEY'
+    }
+
+
+  
+  // 4️⃣ CoinGecko - Cryptocurrency data
+ 
+    url: 'https://www.coingecko.com/en/api',
+    description: 'Crypto prices & market data',
+    signUp: 'Not required for basic tier',
+    freeTier: '10-50 calls/minute',
+    endpoints: {
+      prices: 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd',
+      markets: 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd'
+    }
+
+  
+  // 5️⃣ Unsplash - High-quality images
+ 
+    url: 'https://unsplash.com/developers',
+    description: 'Free high-res photos',
+    signUp: 'https://unsplash.com/join',
+    freeTier: '50 requests/hour',
+    endpoints: {
+      random: 'https://api.unsplash.com/photos/random?client_id=YOUR_KEY',
+      search: 'https://api.unsplash.com/search/photos?query=nature&client_id=YOUR_KEY'
+    }
