@@ -1,0 +1,20 @@
+Create REST API for Product resources with below End points
+
+  Create New Product            POST      /product              
+  Read all Products             GET       /products
+  Read a Product by ID          GET       /products/<productId>
+  Update a Product by ID        PUT       /products/<productsId>
+  Add a review to a Product     PUT       /products/<productsId>/review
+  Remove a Product by ID        DELETE    /products/<productId>
+
+
+
+Sample Product resource:
+    {
+      productId:" ",
+      productName:"  ",
+      price: " ",
+      brand: " ",
+      reviews : [ ]
+    
+    }
